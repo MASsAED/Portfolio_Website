@@ -1,5 +1,32 @@
-header {
-    font-family: 'Times New Roman', Times, serif;
-    color: #32CD32;
-    /* text-align: center; */
+
+  @font-face {
+    font-family: 'Righteous';
+    src: url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lilita+One&family=Open+Sans:ital,wght@0,400;0,800;1,400&family=Orbitron:wght@500&family=Oswald:wght@400;500&family=PT+Serif:ital@0;1&family=Righteous&family=Roboto+Condensed&family=Roboto:wght@400;700&family=Rubik+Bubbles&family=Rubik:wght@300;400&family=Space+Mono&display=swap');
+    font-weight: bold;
+}
+    
+  
+  html {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 16px;
+} 
+
+header{
+padding: 20px;
+}
+header p{
+    font-family: 'Righteous';
+    /* font-weight: bolder; */
+    font-size: 2rem;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header li {
+    float: right;
+    margin: 5px;
+
 }

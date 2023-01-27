@@ -9,18 +9,27 @@
   html {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    background-color: #8ecae6;
-    padding-left: 1.5rem;
+    background-color: #8338ec;
+    padding: 0.5rem  2.5rem;
+    color: #1b263b;
 
 
 
 } 
 #header {
+    background: url(./Background-images/image-from-rawpixel-id-576121-jpeg.jpg) no-repeat center fixed;
+    background-size: cover;
+    position: relative;
+    background-origin: content-box;
+
     display: flex;
     justify-content: flex-start;
+    flex-flow: column;
     flex-direction: column;
     box-sizing: border-box;
     /* border: 2px solid black; */
+    border: 1px solid white;
+
     }
 
 #header #logo {
@@ -31,6 +40,10 @@
     text-align: left;
     padding-right: 22rem;
     padding-left: 1.5rem;
+    color: #8338ec;
+    /* -webkit-text-stroke: 1px black; */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-style: italic;
 }
 #header ul {
     margin: 10px 5px ;
@@ -38,41 +51,77 @@
 }
 
 #header li {
+
     list-style: none;
     font-family: 'Open Sans', sans-serif;
     display: inline-block;
     font-weight: bold;
     font-size: 1.1rem;
 }
-.nav_bar {
+#header .nav_bar {
     text-align: right;
 
     padding: 15px 10px;
     
 }
 main {
+    background: url(./Background-images/image-from-rawpixel-id-576121-jpeg.jpg) no-repeat center fixed;
+    background-size: cover;
+    position: relative;
+    background-origin: content-box;
+
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-top: 3rem;
     margin: 2rem auto;
+    border: 1px solid white;
+
 
 }
 main #intro {
+    background: url(./Background-images/image-from-rawpixel-id-576121-jpeg.jpg) no-repeat center fixed;
+    background-size: cover;
+    position: relative;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+
     flex-grow: 4;
     flex-shrink: 2;
     flex-basis: 2;
 }
 main #hey{
     margin-bottom: 3rem;
+    font-style: italic;
+
 }
 main #i{
     margin-bottom: 3rem;
+    font-style: italic;
+
 }
 main #full{
     margin-bottom: 3rem;
+    font-style: italic;
+
 }
+
+    main #about {
+    font-style: italic;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: bold;   
+    text-align: justify;
+    text-align-last: center;
+    margin: auto 7rem;
+    /* word-spacing: normal; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
 main #social {
+    font-style: italic;
+
     flex-grow: 4;
     flex-shrink: 2;
     flex-basis: 2;
@@ -83,30 +132,46 @@ main #social img {
     height: 30px;
     margin-bottom: 2.5rem;
 }
-main #about {
-font-size: 1.5rem;
-font-style: italic;
-text-transform: capitalize;
-font-weight: bold;    
+
+main #social {
+    margin-top: 5rem;
+    background: url(./Background-images/image-from-rawpixel-id-576121-jpeg.jpg) no-repeat center fixed;
+    background-size: cover;
+    position: relative;
 }
 
 main #social #button{
     text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 10rem;
     padding: 12px;
+    background-color: #e63946;
+    color: white
+
 
 }
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background: url(./Background-images/image-from-rawpixel-id-576121-jpeg.jpg) no-repeat center fixed;
+    background-size: cover;
+    position: relative;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    padding: 3rem;
-    margin: 2rem auto;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-style: italic;
+
+
 }
-footer h3 {
+footer #content {
+    display: flex;
+    justify-content: space-evenly;
     text-align: center;
-    font-size: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    list-style: none;
 }
+

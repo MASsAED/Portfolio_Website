@@ -9,30 +9,104 @@
   html {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    background-color: whitesmoke;
+    background-color: #8ecae6;
+    padding-left: 1.5rem;
+
+
 
 } 
+#header {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+    }
 
-#logo {
+#header #logo {
+
     font-family: 'Righteous';
     font-weight: bolder;
     font-size: 2rem;
-    margin-top: 1.2rem;
     text-align: left;
+    padding-right: 22rem;
+    padding-left: 1.5rem;
 }
-
-header ul {
-    list-style-type: none;
-    padding: 0;
-    font-size: bold;
+#header ul {
+    margin: 10px 5px ;
+    padding: 10px 5px;
 }
 
 #header li {
+    list-style: none;
     font-family: 'Open Sans', sans-serif;
-    margin: 5px;
-    display: inline;
+    display: inline-block;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+}
+.nav_bar {
     text-align: right;
 
+    padding: 15px 10px;
+    
+}
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 3rem;
+    margin: 2rem auto;
+
+}
+main #intro {
+    flex-grow: 4;
+    flex-shrink: 2;
+    flex-basis: 2;
+}
+main #hey{
+    margin-bottom: 3rem;
+}
+main #i{
+    margin-bottom: 3rem;
+}
+main #full{
+    margin-bottom: 3rem;
+}
+main #social {
+    flex-grow: 4;
+    flex-shrink: 2;
+    flex-basis: 2;
+    margin-bottom: 7rem;
+}
+main #social img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 2.5rem;
+}
+main #about {
+font-size: 1.5rem;
+font-style: italic;
+text-transform: capitalize;
+font-weight: bold;    
+}
+
+main #social #button{
+    text-align: center;
+    width: 10rem;
+    padding: 12px;
+
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    margin: 2rem auto;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+footer h3 {
+    text-align: center;
+    font-size: 2rem;
 }

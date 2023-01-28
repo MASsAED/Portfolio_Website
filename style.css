@@ -5,13 +5,52 @@
     font-weight: bold; */
 /* } */
     
+@font-face {
+    font-family: Bixxxa;
+    src: url('./bixxxa.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: Bungeehee;
+    src: url('./bungeehee.woff') format('woff');
+  }
+  
+  @font-palette-values ToxicGreen {
+    font-family: Bixxxa;
+    base-palette: 3; /* This is Bixxxa’s green palette */
+  }
+  
+  
+  @font-palette-values ToxicGreen {
+    font-family: Bungeehee;
+    base-palette: 7; /* This is Bungeehee’s green palette... */
+    2: lime; /* ...except this is pink, which I overwrite to lime */
+  }
+
+  
+  
+  h1 {
+    font-family: Bixxxa;
+    font-palette: ToxicGreen;
+  }
+  
+  h2 {
+    font-family: Bungeehee;
+    font-palette: ToxicGreen;
+  }
+
+  @font-palette-values --GraysRemix {
+    font-family: Rocher;
+    base-palette: 9;
+    override-colors: 
+      2 rgb(90,290,210);}
   
   html {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    background-color: #312244;
     padding: 0.5rem  2.5rem;
     color: #00171f;
+    background-color: #7209b7;
 
 } 
 
@@ -20,7 +59,7 @@
     background-size: cover;
     position: relative;
     background-origin: content-box;
-
+    opacity: 0.9;
     display: flex;
     justify-content: flex-start;
     flex-flow: column;
@@ -28,18 +67,22 @@
     box-sizing: border-box;
     /* border: 2px solid black; */
     border: 1px solid white;
-
-
     }
 
-#header #logo {
+    /* body {
+        font-family: "Rocher";
+        font-palette: --GraysRemix;
+      } */
 
-    font-family: 'Righteous';
+#header #logo {
+    /* font-family: 'Righteous',Bixxxa;/ */
+    font-family: Rocher;
+
     font-weight: bolder;
     font-size: 2rem;
     text-align: left;
-    padding-right: 17.5rem;
-    padding-left: 1.5rem;
+    padding-right: 16rem;
+    padding-left: 3rem;
     color: #312244;
     letter-spacing: 2px;
 
@@ -49,10 +92,12 @@
 }
 #header span {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+
     font-weight: bolder;
     font-size: 2.5rem;
     font-style: italic;
+    font-family: 'Righteous',Bixxxa;
 }
 #header ul {
     margin: 10px 5px ;
@@ -63,8 +108,9 @@
 
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 
-    list-style: none;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Righteous',Bixxxa;
+
     display: inline-block;
     font-weight: bold;
     font-size: 1.3rem;
@@ -75,7 +121,8 @@
 }
 #header .nav_bar a {
     color: #312244;
-    /* color: #8338ec; */
+    text-decoration: none;
+
 
 }
 
@@ -84,13 +131,16 @@ main {
     background-size: cover;
     position: relative;
     background-origin: content-box;
+    background-repeat: repeat-y;
+
 
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 3rem;
-    margin: 2rem auto;
+    padding-top: 2rem;
+    margin: 0 auto;
     border: 1px solid white;
+    opacity: 0.8;
 
 
 }
@@ -100,36 +150,53 @@ main #intro {
     position: relative;
     background-origin: content-box;
     background-repeat: no-repeat;
+    /* flex-grow: 4; */
+    /* flex-shrink: 2; */
+    /* flex-basis: 2; */
+    margin-left: 5rem;
+    padding-top: 3rem;
+    text-shadow: -1px 0 #7400b8, 0 1px #7400b8, 1px 0 white, 0 -1px white;
 
-    flex-grow: 4;
-    flex-shrink: 2;
-    flex-basis: 2;
 }
 main #intro img {
-    width: 190px;
+    width: 220px;
     height: auto;
     float: left;
-    margin-left: 4rem;
+    margin-left: 6rem;
     /* padding-left: 4rem ; */
     /* padding-top: 1.8rem ; */
     border: 2px  solid #312244;
-
     border-radius: 50%;
 }
 main #hey{
-    margin-top: 15rem;
+    margin-top: 3rem;
     margin-bottom: 1.5rem;
     font-style: italic;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-family: 'Righteous',Bixxxa;
+
 
 }
 main #i{
     margin-bottom: 1.5rem;
     font-style: italic;
+    font-family: 'Righteous',Bixxxa;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+
 
 }
 main #full{
-    margin-bottom: 1.5rem;
+    margin-bottom: 9rem;
     font-style: italic;
+    font-family: 'Righteous',Bixxxa;
+    font-size: 1.8rem;
+    letter-spacing: 0.8px;
+    word-spacing: 2px;
+
 
 }
 
@@ -143,16 +210,20 @@ main #full{
     margin: auto 7rem;
     /* word-spacing: normal; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Righteous',Bixxxa;
 
     }
 
 main #social {
     font-style: italic;
+    font-family: 'Righteous',Bixxxa;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 
     flex-grow: 4;
     flex-shrink: 2;
     flex-basis: 2;
     margin-bottom: 3rem;
+    text-transform: uppercase;
 }
 main #social img {
     width: 30px;
@@ -164,7 +235,11 @@ main #social {
     margin-top: 5rem;
     background: url(./Background-images/image-from-rawpixel-id-576121-jpeg.jpg) no-repeat center fixed;
     background-size: cover;
-    position: relative;
+    position: relative; 
+    text-shadow: -1px 0 #7400b8, 0 1px #7400b8, 1px 0 white, 0 -1px white;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
 }
 
 main #social #button{
@@ -175,6 +250,8 @@ main #social #button{
     padding: 12px;
     background-color:  #312244;
     color: wheat;
+    
+
 
 
 
@@ -183,14 +260,16 @@ footer {
     background: url(./Background-images/image-from-rawpixel-id-576121-jpeg.jpg) no-repeat center fixed;
     background-size: cover;
     position: relative;
-
+    opacity: 0.9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
     border: 1px solid white;
     text-transform: uppercase;
-    font-style: italic;
+    font-style: italic;     font-family: 'Righteous',Bixxxa;
+    text-shadow: -1px 0 #7400b8, 0 1px #7400b8, 1px 0 white, 0 -1px white;
+
 
 
 }
@@ -201,5 +280,7 @@ footer #content {
     padding-bottom: 1rem;
     font-size: 1.1rem;
     list-style: none;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
 }
 

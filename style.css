@@ -9,13 +9,12 @@
   html {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    background-color: #8338ec;
+    background-color: #312244;
     padding: 0.5rem  2.5rem;
-    color: #1b263b;
-
-
+    color: #00171f;
 
 } 
+
 #header {
     background: url(./Background-images/image-from-rawpixel-id-576121-jpeg.jpg) no-repeat center fixed;
     background-size: cover;
@@ -30,6 +29,7 @@
     /* border: 2px solid black; */
     border: 1px solid white;
 
+
     }
 
 #header #logo {
@@ -38,11 +38,20 @@
     font-weight: bolder;
     font-size: 2rem;
     text-align: left;
-    padding-right: 22rem;
+    padding-right: 17.5rem;
     padding-left: 1.5rem;
-    color: #8338ec;
+    color: #312244;
+    letter-spacing: 2px;
+
     /* -webkit-text-stroke: 1px black; */
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-style: italic;
+}
+#header span {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 2.5rem;
     font-style: italic;
 }
 #header ul {
@@ -52,18 +61,24 @@
 
 #header li {
 
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
     list-style: none;
     font-family: 'Open Sans', sans-serif;
     display: inline-block;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 #header .nav_bar {
     text-align: right;
-
     padding: 15px 10px;
-    
 }
+#header .nav_bar a {
+    color: #312244;
+    /* color: #8338ec; */
+
+}
+
 main {
     background: url(./Background-images/image-from-rawpixel-id-576121-jpeg.jpg) no-repeat center fixed;
     background-size: cover;
@@ -90,18 +105,30 @@ main #intro {
     flex-shrink: 2;
     flex-basis: 2;
 }
+main #intro img {
+    width: 190px;
+    height: auto;
+    float: left;
+    margin-left: 4rem;
+    /* padding-left: 4rem ; */
+    /* padding-top: 1.8rem ; */
+    border: 2px  solid #312244;
+
+    border-radius: 50%;
+}
 main #hey{
-    margin-bottom: 3rem;
+    margin-top: 15rem;
+    margin-bottom: 1.5rem;
     font-style: italic;
 
 }
 main #i{
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     font-style: italic;
 
 }
 main #full{
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     font-style: italic;
 
 }
@@ -125,7 +152,7 @@ main #social {
     flex-grow: 4;
     flex-shrink: 2;
     flex-basis: 2;
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
 }
 main #social img {
     width: 30px;
@@ -146,8 +173,9 @@ main #social #button{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 10rem;
     padding: 12px;
-    background-color: #e63946;
-    color: white
+    background-color:  #312244;
+    color: wheat;
+
 
 
 }

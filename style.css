@@ -7,6 +7,10 @@
     font-family: Bungeehee;
     src: url('./bungeehee.woff') format('woff');
   }
+  html{
+    margin: 0;
+    padding: 0;
+  }
   
 body {
     font-family: 'Open Sans', sans-serif;
@@ -209,7 +213,6 @@ main #social #button{
 
 }
 footer {
-    opacity: 1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-weight: bold;
@@ -238,136 +241,148 @@ footer #content {
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 
 }
-
-
-@media only screen and (max-width: 480px) {
-
-    body{
-        box-sizing: border-box;
-        background-size:cover ;
+@media screen and (max-width: 480px){
+    html {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+        width: fit-content;
+        overflow-x: hidden;
+
+        /* background-image: url();
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat; background-size: cover; */
+
     }
     #header {
         display: flex;
-        align-content: stretch;
-        justify-content: flex-start;
-
-
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-evenly;
     }
     #header .nav_bar {
         display: none;
-        
-    }
-    #header #logo {
-        margin-top: 2rem;
-        margin-left: 3rem;
-        margin-right: 10rem;
-        font-size: 1.8rem;
     }
     #header img {
-        display:inline-block;
-        margin: 2rem 1rem 1rem 2rem;
-        position: absolute;
-        float: right;
-        height: 37px;        
-        padding-top: 0.6rem;
+        width: 35px;
+        height: 35px;
+
     }
-    main #intro{
+    #header #logo {
+        padding-left: 0.5rem;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+
+    }
+    #header span {
+        font-size: 2rem;
+    }
+    #header #menu {
+        width: 35px; height: 35px;
+        display: inline;
+        margin-right: 1rem;
+        margin-top: 0;
+        padding-top: 0;
+        
+    }
+    main #intro {
         display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: space-between;
-        flex-flow: column;
-    }
-    main #intro img{
+        align-items: center;
+        justify-content:space-around;
+        flex-direction:column;
+        flex-flow:column;
+     }
+
+     main #intro img{
+        display: inline; 
+        padding-top: 0;
         width: 130px;
         height: 100;
-        margin: -2rem 0 1rem 3rem;
-        float: left;        
-    }
-    #intro #hey{
+        margin-right: 7rem;
+        text-align: center;
+        
+     }
+     #intro #hey{
         font-size: 1.1rem;
-        margin: -8.5rem 1rem 3rem 1rem;
         padding-bottom: 1rem;
          margin-bottom: 0; 
-         float: right; 
          text-align: center;
 
     }
     #intro #i {
         font-size: 1.1rem;
         margin: 0 ;
-        margin-left: 0.8rem;
         text-align: center;
         padding-bottom: 1rem;
-        float: right;
 
     }
     #intro #full {
         font-size: 1.1rem;
         margin: 0 ;
-        margin-left: 1rem;
         text-align: center;
-        float: left;
 
     } 
      main #intro .hello {
-        float: right;
-        padding-bottom: 4rem;
-        font-size: 1rem;
+        padding-bottom: 2rem;
+        font-size: 0.8rem;
         text-align: center;
     }
 
-    main #about {
+    main .about_me {
         display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
         flex-flow: column;
-        /* text-align: center; */
         text-align: justify;
         word-spacing: 2px;
-        margin-top: 1.2rem;
-        width: 70%;
-        /* margin-left: 3rem; */
-        /* margin-top: 10rem; */
+        margin-top: -2rem;
+        width: 60% fit-content;
         padding-top: 0;
-        font-family: Bixxxa;
+        font-family: 'Bixxxa';
+        overflow: scroll;
+        height: 400px;
 
 
     }
     main #about h3 {
-        font-family: Bixxxa;
+        font-family: 'Bixxxa';
         font-weight: bolder;
-        margin-bottom: 1rem;
-
+        text-align: center;
+        padding-bottom: 2rem;
     }
-    main #about .about_me {
-        height: 200px;
-        width: 360px;
-        overflow: scroll;
+    #social #my_social {
+        font-size: 1.1rem;
     }
-    main #my-social {
-        margin-top: 0;
-        padding-left: 0;
+    #social a img {
+        width: 7%;;
     }
-    main #social {
-        /* margin-right: 4rem; */
-    }
-    footer h3 {
-        /* padding-right: 4rem; */
-    }
-    footer #content {
+    footer {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items:center;
+        justify-content: center;
+        flex-flow: column;
+    }
+    footer h3 {
+        display: inline;
         text-align: center;
-        /* margin-right: 1rem; */
-        /* padding-right: 4rem; */
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    footer #content {
+        display: inline;
+        padding-bottom: 1rem;
+        font-size: 0.8rem;
+        box-sizing: border-box;
+        text-align: justify;
+        list-style: none;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     }
 }
-@media(min-width: 481px) and (max-width: 1024px) {
+
+@media screen and (max-width: 1024px) and (min-width: 481px){
 
     body{
         box-sizing: border-box;
@@ -381,7 +396,7 @@ footer #content {
     justify-content: flex-start;
     flex-direction: column;
 
-}
+    }
     #header .nav_bar {
         display: none;
     }
@@ -389,10 +404,7 @@ footer #content {
         margin-top: -0.7rem;
         margin-right: 12rem;
         margin-left: 2rem;
-        /* padding-right: 8rem; */
         font-size: 1.8rem;
-        /* float: left; */
-        /* position: relative; */
         
     }
 
@@ -413,18 +425,14 @@ footer #content {
      }
 
      main #intro img{
-        /* display: inline;  */
-        /* margin-top: 1rem; */
         padding-top: 0;
         width: 190px;
         height: 100;
-        /* margin-left: 1.5rem;  */
         float: left;
         
      }
      #intro #hey{
         font-size: 1.3rem;
-        /* margin: 1.5rem 3rem 3rem 11rem; */
         padding-bottom: 1rem;
          margin-bottom: 0; 
          float: right; 
@@ -434,7 +442,6 @@ footer #content {
     #intro #i {
         font-size: 1.3rem;
         margin: 0 ;
-        /* margin-left: 11rem; */
         text-align: center;
         padding-bottom: 1rem;
         float: right;
@@ -443,7 +450,6 @@ footer #content {
     #intro #full {
         font-size: 1.3rem;
         margin: 0 ;
-        /* margin-left: 12rem; */
         text-align: center;
         float: right;
 
@@ -456,7 +462,6 @@ footer #content {
     }
 
     main .about_me {
-        /* text-align: center; */
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -464,9 +469,8 @@ footer #content {
         flex-flow: column;
         text-align: justify;
         word-spacing: 2px;
-        margin-top: -2rem;;
+        margin-top: -2rem;
         width: 60% fit-content;
-        /* margin-left: 3.7rem; */
         padding-top: 0;
         font-family: Bixxxa;
         overflow: scroll;
@@ -499,7 +503,6 @@ footer #content {
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-evenly;
-        /* text-align: center; */
         flex-flow: row;
         padding-bottom: 1rem;
         font-size: 1.1rem;
@@ -510,5 +513,3 @@ footer #content {
     
     }
 }
-    
-

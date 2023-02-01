@@ -10,6 +10,7 @@
   html{
     margin: 0;
     padding: 0;
+    background-color: #14213d;
   }
   
 body {
@@ -45,7 +46,7 @@ body {
     list-style: none; 
     float: left;
 
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     font-style: italic;
 }
 #header span {
@@ -111,7 +112,7 @@ main {
 }
 main #intro {
 
-    text-shadow: -1px 0 #7400b8, 0 1px #7400b8, 1px 0 white, 0 -1px white;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 
 }
 main #intro img {
@@ -192,7 +193,7 @@ main #social {
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat; background-size: cover;
-    text-shadow: -1px 0 #7400b8, 0 1px #7400b8, 1px 0 white, 0 -1px white;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     font-size: 1.2rem;
     letter-spacing: 1px;
     word-spacing: 2px;
@@ -222,7 +223,7 @@ footer {
     padding: 0;
     font-style: italic;     
     font-family: 'Righteous',Bixxxa;
-    text-shadow: -1px 0 #7400b8, 0 1px #7400b8, 1px 0 white, 0 -1px white;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 
 
 
@@ -271,7 +272,8 @@ footer #content {
     }
     #header #logo {
         padding-left: 0.5rem;
-        margin-left: 1rem;
+        padding-top: 0.8rem;
+        margin-left: 1.5rem;
         font-size: 1.5rem;
 
     }
@@ -281,10 +283,9 @@ footer #content {
     #header #menu {
         width: 35px; height: 35px;
         display: inline;
-        margin-right: 1rem;
+        margin-right: 2rem;
         margin-top: 0;
         padding-top: 0;
-        
     }
     main #intro {
         display: flex;
@@ -335,10 +336,10 @@ footer #content {
         align-items: stretch;
         justify-content: flex-start;
         flex-flow: column;
-        text-align: justify;
-        word-spacing: 2px;
+        text-align: left;
+        word-spacing: 0.5px;
         margin-top: -2rem;
-        width: 60% fit-content;
+        width: 100% ;
         padding-top: 0;
         font-family: 'Bixxxa';
         overflow: scroll;
@@ -464,17 +465,18 @@ footer #content {
     main .about_me {
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         justify-content: flex-start;
         flex-flow: column;
-        text-align: justify;
-        word-spacing: 2px;
+        text-align:start;
+        word-spacing: 1px;
         margin-top: -2rem;
-        width: 60% fit-content;
+        width: 100% fit-content;
         padding-top: 0;
         font-family: Bixxxa;
         overflow: scroll;
         height: 400px;
+        padding: 0;
 
 
     }
@@ -505,7 +507,8 @@ footer #content {
         justify-content: space-evenly;
         flex-flow: row;
         padding-bottom: 1rem;
-        font-size: 1.1rem;
+        padding-right: 1rem;
+        font-size: 1rem;
         box-sizing: border-box;
         text-align: left;
         list-style: none;

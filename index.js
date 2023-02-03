@@ -14,14 +14,24 @@ function displayNavbar(){
     }
     }
 
-/* -masoud image change color function- */
+/* -masoud image change size function- */
+var masoudImg = document.getElementById('masoudImage');
 
-function changeMasoudColor(){
-    var x = document.getElementById('masoudImage');
+function bigImg(masoudImg){
+    masoudImg.style.width = "160px";
+    masoudImg.style.height = "140px";
 
-    if (x.style.width === "170px"){
-        x.style.width = "120px";
-    }else{
-        x.style.width = "170px";
-    }
 }
+
+function smallImg(masoudImg){
+    masoudImg.style.width = "140px";
+    masoudImg.style.height = "120px";
+    masoudImg.style.marginTop = "1.7rem";
+
+
+}
+
+
+/* Portfolio page chaging Items position*/
+
+

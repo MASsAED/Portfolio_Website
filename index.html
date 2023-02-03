@@ -4,38 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Masoud</title>
     <link rel="stylesheet" href="style.css">
-    <script id="home_page" src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 
-    <script src="index.js"></script> 
 
 </head>
 <body>
     <header id="header">
         <nav >
-            <ul>
+            <ul class="mobile-container">
                 <li id="logo"><span>M</span>ASOUD</li>
-                <img id="menu" src="./social_media_icon/menu.png" alt="menu icon" >
-                <li class="nav_bar" id="mynav_bar"><a href="#header">HOME</a></li>
-                <li class="nav_bar" id="mynav_bar"><a href="#about">ABOUT</a></li>
-                <li class="nav_bar" id="mynav_bar"><a href="portfolio.html" target="_blank">PORTFOLIO</a></li>
-                <li class="nav_bar" id="mynav_bar"><a href="#blank" target="_blank">PAGES</a></li>
-                <li class="nav_bar" id="mynav_bar"><a href="#blog">BLOG</a></li>
-                <li class="nav_bar" id="mynav_bar"><a href="#contact">CONTACT</a></li>
+                <img id="menu" src="./social_media_icon/menu.png" alt="menu icon" onclick="displayNavbar()">
+
+                <div id="topnav">
+                <li class="nav_bar" id="mynav_bar1"><a href="#header">HOME</a></li>
+            <div class="subnav">
+                <button class="subnavbtn"><li class="nav_bar"><a href="#about">ABOUT</a></li></button>
+                <div class="subnav-content">
+                    <a href="#company">Company</a>
+                    <a href="#team">team</a>
+                    <a href="#careers">careers</a>
+                </div>
+            </div>
+
+            <div class="subnav">
+                <button class="subnavbtn"><li class="nav_bar" ><a href="portfolio.html" target="_blank">PORTFOLIO</a></li></button>
+                <div class="subnav-content">
+                    <a href="#portfolio.html">Portfolio</a>
+                    <a href="#PIANOKEYS">PianoKeys</a>
+                    <a href="#MIXEDMESSAGE">MixedMessage</a>
+                    <a href="#ATTICA">Attica</a>
+                    <a href="#PROJECT">Project</a>
+                    <a href="#PROJECT">Project</a>
+                    <a href="#PROJECT">Project</a>
+                    <a href="#PROJECT">Project</a>
+                    <a href="#PROJECT">Project</a>
+                </div>
+            </div>
+
+            <div class="subnav">
+                <button class="subnavbtn"><li class="nav_bar" ><a href="#blank" target="_blank">PAGES</a></li></button>
+                <div class="subnav-content">
+                    <a href="#page1">Page1</a>
+                    <a href="#page2">Page2</a>
+                    <a href="#page3">Page3</a>
+                </div>
+            </div>
+
+            <div class="subnav">
+                <button class="subnavbtn"><li class="nav_bar" ><a href="#contact">CONTACT</a></li></button>
+                <div class="subnav-content">
+                    <a href="#Address">Address</a>
+                    <a href="#Email">Email</a>
+                    <a href="#PhoneNumber">PhoneNumber</a>
+                </div>
+            </div>
+                </div>
             </ul>
         </nav>
     </header>
 
     <main>
         <div id="intro">
+            <div id='greating'>
             <img src="./Background-images/MASOUD-SAED.jpg" alt="masoud saed photo">
-        <h3 class='hello' id="hey">HEY THERE!</h3>
-        <h2 class='hello' id="i">I AM MASOUD SAED</h2>
+        <h3 class='hello' id="hey"><a href="_self" target="_self">HEY THERE!</a></h3>
+        <h3 class='hello' id="i">I AM MASOUD SAED</h3>
         <h3 class='hello' id="full">FULLSTUCK DEVELOPER STUDENT</h3><br>
+            </div>
         </div>
         <div id="about">
             <h3>ABOUT ME</h3>
@@ -51,7 +90,7 @@
         <a href="https://www.instagram.com/masoud_saed89/" target="_blank"><img src="./social_media_icon/instagram.png" alt="This is my instagram"></a>
         <a href="https://github.com/MASsAED" target="_blank"><img src="./social_media_icon/github.png" alt="This is my GitHub"></a>
         <a href="https://telegram.org/MASOUD_SAED89" target="_blank"><img src="./social_media_icon/telegram.png" alt="This is my telegram"></a><br>
-        <input id="button" type="button" value="SEE MY WORK" >
+        <input id="button" type="button" value="SEE MY WORK" onclick="alert('Hello, world!')" >
         </div>
 
 
@@ -66,6 +105,8 @@
           </ul>
 
     </footer>
-    <!-- <link rel="portfolio" href="portfolio.html"> -->
+          <!--Custom Javascript File-->
+
+          <script src="./index.js"> </script>
 </body>
 </html>

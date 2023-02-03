@@ -50,6 +50,7 @@ body {
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     font-style: italic;
 }
+
 #header span {
     /* color: black; */
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -95,7 +96,7 @@ body {
     text-decoration: none;
 
 }
-/* extention -------------------------------------*/
+/* -------------dropdown menu inside a Navigation Bar start-------------*/
 #header #topnav {
     overflow: hidden;
     background-color: blue; 
@@ -150,7 +151,7 @@ body {
   .subnav:hover .subnav-content {
     display: block;
   }
-/*------------------------------Extention End-----------------*/
+/*-------dropdown menu inside a Navigation Bar End-----------------*/
 
 main {
 
@@ -173,7 +174,7 @@ main #intro {
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 
 }
-main #intro img {
+main #intro #masoudImage {
     width: 170px;
     /* height: auto; */
     float: left;
@@ -193,7 +194,7 @@ main #hey{
 
 
 }
-main #hey a{
+main #hey a, #logo a{
     text-decoration: none;
 
     background:
@@ -214,8 +215,9 @@ main #hey a{
   transition: background-size 400ms;
 }
 
-main #hey a:hover {
+main #hey a:hover, #logo a:hover{
         background-size: 0 3px, 100% 3px;
+            color: #840032;
     
 }
 

@@ -14,4 +14,14 @@ function displayNavbar(){
     }
     }
 
-/* -- */
+/* -masoud image change color function- */
+
+function changeMasoudColor(){
+    var x = document.getElementById('masoudImage');
+
+    if (x.style.width === "170px"){
+        x.style.width = "120px";
+    }else{
+        x.style.width = "170px";
+    }
+}

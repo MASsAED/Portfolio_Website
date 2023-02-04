@@ -32,6 +32,11 @@ function smallImg(masoudImg){
 }
 
 
-/* Portfolio page chaging Items position*/
+/* Portfolio mixed message Project */
+function mixedMessage(){
+    document.getElementById('mixedmessage');
+
+
+}
 
 
